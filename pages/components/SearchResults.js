@@ -28,4 +28,10 @@ function SearchResults({ results }) {
   );
 }
 
+SearchResults.getInitialProps = ({ res, err }) => {
+  const results = res ? res.results : err ? err.results : 404;
+
+  return { results };
+};
+
 export default SearchResults;

@@ -10,4 +10,12 @@ function HeaderOption({ Icon, title, selected }) {
   );
 }
 
+HeaderOption.getInitialProps = ({ res, err }) => {
+  const Icon = res ? res.Icon : err ? err.Icon : 404;
+  const title = res ? res.title : err ? err.title : 404;
+  const selected = res ? res.selected : err ? err.selected : 404;
+
+  return { Icon, title, selected };
+};
+
 export default HeaderOption;
