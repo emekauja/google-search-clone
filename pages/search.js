@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import Head from 'next/head';
 import Header from './components/Header';
 import { response } from '../Response';
