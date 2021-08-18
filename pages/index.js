@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Avatar from './components/Avatar';
 import profilePic from '../public/images/avatar.jpg';
