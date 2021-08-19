@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head';
 import Avatar from './components/Avatar';
@@ -47,11 +48,10 @@ export default function Home() {
       </header>
 
       <form className="flex flex-col items-center mt-28 flex-grow w-4/5">
-        <Image
+        <img
           src="https://www.google.co.uk/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
-          height={92}
-          width={272}
           alt="google_logo"
+          className="h-[46px] w-[136px] sm:h-[92px] sm:w-[272px]"
         />
         <div className="flex w-full ml-5 mt-6 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-5 mr-3 text-gray-500" />
